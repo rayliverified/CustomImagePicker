@@ -1,4 +1,4 @@
-[![GitHub release](https://img.shields.io/github/release/searchy2/CustomRecentImages.svg?style=flat-square)]() [![Libraries.io for GitHub](https://img.shields.io/librariesio/github/searchy2/CustomRecentImages.svg?style=flat-square)]() [![Github file size](https://img.shields.io/badge/Size-134 KB-e91e63.svg?style=flat-square)]()
+[![GitHub release](https://img.shields.io/github/release/searchy2/CustomRecentImages.svg?style=flat-square)](https://github.com/searchy2/CustomRecentImages/releases) [![Libraries.io for GitHub](https://img.shields.io/librariesio/github/searchy2/CustomRecentImages.svg?style=flat-square)](https://github.com/searchy2/CustomRecentImages) [![Github file size](https://img.shields.io/badge/Size-134 KB-e91e63.svg?style=flat-square)](https://github.com/searchy2/CustomRecentImages)
 # Custom Recent Images
 
 ![Screenshots](demo/app_icon.png)
@@ -36,7 +36,6 @@ You can use regular gridview but if you want to use it exactly like above pictur
 I used jess-anders/two-way-gridview in this library. All you have to do is set below code in your xml instaed of regular gridview:
 
 ```xml
-
 <com.jess.ui.TwoWayGridView
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#E8E8E8"
