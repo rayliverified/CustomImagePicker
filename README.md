@@ -1,36 +1,26 @@
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-recent--images-green.svg?style=true)](https://android-arsenal.com/details/1/3622)
-# Recent Images
+[![GitHub release](https://img.shields.io/github/release/searchy2/CustomButton.svg?style=flat-square)]() [![Libraries.io for GitHub](https://img.shields.io/librariesio/github/searchy2/CustomButton.svg?style=flat-square)]()
+# Custom Recent Images
 
 ![Screenshots](demo/app_icon.png)
 
-Do you noticed the new feature of Telegram or Instagram?! They show your latest images when you try to attach or post a picture.
-So I developed this library the same with lots of customization.
-
-Simple way to get all images of device based on date taken, name, id and other customization.
+Custom Recent Images is part of the Custom UI collection of ready-made, essential, and elegant Android code libraries. Custom Recent Images provides a drop-in popup gallery for selecting recent images. 
 
 ### Single Row 
 ![Screenshots](demo/Recent%20Images%201%20Row.png)
 
-### 2 Rows
+### Double Row
 ![Screenshots](demo/Recent%20Images%202%20Rows.png)
 
-If you Watch this repository, GitHub will send you an email every time I publish an update.
-
----
-# Sample Project
-You can download the latest sample APK from this repo here: https://github.com/amirarcane/recent-images/blob/master/sample/sample.apk
-
-Watching this repository will allow GitHub to email you whenever I publish a release.
-
----
 # Gradle Dependency
 
-Add this line to your `build.gradle` project
+Add this line to your `build.gradle` project. Use the latest release as the latest version. 
 
 ```java
-compile 'com.amirarcane.recent-images:recentimages:1.1.1'
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+compile 'com.github.searchy2:CustomRecentImages:latest-version'
 ```
----
 # Usage
 
 Just add these lines to your class, that's it.

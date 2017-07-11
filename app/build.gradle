@@ -1,0 +1,32 @@
+apply plugin: 'com.android.application'
+
+android {
+	compileSdkVersion 25
+	buildToolsVersion "25.0.3"
+
+	defaultConfig {
+		applicationId "stream.recentimagesapp"
+		minSdkVersion 15
+		versionCode 1
+		versionName "1.0.0"
+		targetSdkVersion 25
+	}
+	buildTypes {
+		release {
+			minifyEnabled false
+			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+		}
+	}
+}
+
+dependencies {
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
+	compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':recentimages')
+    compile 'com.github.searchy2:CustomButton:1.2'
+
+	compile 'com.android.support:appcompat-v7:25.3.1'
+	compile 'com.android.support:recyclerview-v7:25.3.1'
+}
