@@ -1,4 +1,4 @@
-[![GitHub release](https://img.shields.io/github/release/searchy2/CustomButton.svg?style=flat-square)]() [![Libraries.io for GitHub](https://img.shields.io/librariesio/github/searchy2/CustomButton.svg?style=flat-square)]()
+[![GitHub release](https://img.shields.io/github/release/searchy2/CustomRecentImages.svg?style=flat-square)]() [![Libraries.io for GitHub](https://img.shields.io/librariesio/github/searchy2/CustomRecentImages.svg?style=flat-square)]() [![Github file size](https://img.shields.io/badge/Size-134 KB-e91e63.svg?style=flat-square)]()
 # Custom Recent Images
 
 ![Screenshots](demo/app_icon.png)
@@ -13,7 +13,7 @@ Custom Recent Images is part of the Custom UI collection of ready-made, essentia
 
 # Gradle Dependency
 
-Add this line to your `build.gradle` project. Use the latest release as the latest version. 
+Add this line to your `build.gradle` project. Use the latest release version for the version code. 
 
 ```java
 repositories {
@@ -30,7 +30,7 @@ RecentImages ri = new RecentImages();
 ImageAdapter adapter = ri.getAdapter(MainActivity.this);
 ```
 `ri.getAdapter()` method reurns an adapter that you can easily set it as your gridview adapter. By default it returns device pictures
-based on `Date_Taken` and `Descending` order, for changing them see [Customization](https://github.com/amirarcane/recent-images/#customization)
+based on `Date_Taken` and `Descending` order, for changing them see Customization.
 
 You can use regular gridview but if you want to use it exactly like above picture you need horizontal gridview.
 I used jess-anders/two-way-gridview in this library. All you have to do is set below code in your xml instaed of regular gridview:
@@ -80,5 +80,3 @@ ri.setWidth(70);
 ImageAdapter adapter = ri.getAdapter(MainActivity.this, ri.LATITUDE, ri.ASCENDING);
 gridview.setAdapter(adapter);
 ```
-
----
