@@ -1,4 +1,5 @@
-[![GitHub release](https://img.shields.io/github/release/searchy2/CustomRecentImages.svg?style=flat-square)](https://github.com/searchy2/CustomRecentImages/releases) [![Libraries.io for GitHub](https://img.shields.io/librariesio/github/searchy2/CustomRecentImages.svg?style=flat-square)](https://github.com/searchy2/CustomRecentImages) [![Github file size](https://img.shields.io/badge/Size-134 KB-e91e63.svg?style=flat-square)](https://github.com/searchy2/CustomRecentImages)
+[![GitHub release](https://img.shields.io/github/release/searchy2/CustomRecentImages.svg?style=flat-square)](https://github.com/searchy2/CustomRecentImages/releases) [![Libraries.io for GitHub](https://img.shields.io/librariesio/github/searchy2/CustomRecentImages.svg?style=flat-square)](https://github.com/searchy2/CustomRecentImages) 
+[![Github file size](https://img.shields.io/badge/Size-134%20KB-e91e63.svg?style=flat-square)](http://www.methodscount.com/?lib=com.github.searchy2%3ACustomRecentImages%3A1.0)
 # Custom Recent Images
 
 ![Screenshots](demo/app_icon.png)
