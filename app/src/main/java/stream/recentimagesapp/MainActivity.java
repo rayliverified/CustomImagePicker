@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         cr = this.getContentResolver();
-        mImage = (ImageView) findViewById(R.id.imageView);
+        mImage = findViewById(R.id.imageView);
 
         //Initialize Recent Images Dialogue Popup.
         final View bottomSheet = getLayoutInflater().inflate(R.layout.bottom_sheet, null);
@@ -64,8 +64,8 @@ public class MainActivity extends AppCompatActivity {
         mBottomSheetDialog.getWindow().setGravity(Gravity.BOTTOM);
 
         //Initialize Recent Images Menu Actions.
-        LinearLayout layoutCamera = (LinearLayout) bottomSheet.findViewById(R.id.btn_camera);
-        LinearLayout layoutGallery = (LinearLayout) bottomSheet.findViewById(R.id.btn_gallery);
+        LinearLayout layoutCamera = bottomSheet.findViewById(R.id.btn_camera);
+        LinearLayout layoutGallery = bottomSheet.findViewById(R.id.btn_gallery);
         layoutCamera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        CustomButton btn1 = (CustomButton) findViewById(R.id.btn1);
+        CustomButton btn1 = findViewById(R.id.btn1);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
                 ri.setWidth(100);
                 ImageAdapter adapter = ri.getAdapter(MainActivity.this);
 
-                TwoWayGridView gridview = (TwoWayGridView) bottomSheet.findViewById(R.id.gridview);
+                TwoWayGridView gridview = bottomSheet.findViewById(R.id.gridview);
                 gridview.getLayoutParams().height = Units.dpToPx(mContext, 100);
                 gridview.setNumRows(1);
                 gridview.setAdapter(adapter);
@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        CustomButton btn2 = (CustomButton) findViewById(R.id.btn2);
+        CustomButton btn2 = findViewById(R.id.btn2);
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
                 ri.setWidth(100);
                 ImageAdapter adapter = ri.getAdapter(MainActivity.this);
 
-                TwoWayGridView gridview = (TwoWayGridView) bottomSheet.findViewById(R.id.gridview);
+                TwoWayGridView gridview = bottomSheet.findViewById(R.id.gridview);
                 gridview.getLayoutParams().height = Units.dpToPx(mContext, 200);
                 gridview.setNumRows(2);
                 gridview.setAdapter(adapter);
@@ -188,13 +188,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean IsPermissionEnabled(Context context, String permission)
     {
         if (Build.VERSION.SDK_INT >= 23) {
-            if (context.checkSelfPermission(permission) == PackageManager.PERMISSION_GRANTED) {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return context.checkSelfPermission(permission) == PackageManager.PERMISSION_GRANTED;
         }
         else
         {
