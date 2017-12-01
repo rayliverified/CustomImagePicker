@@ -23,11 +23,10 @@ android {
 dependencies {
     repositories {
         maven { url 'https://jitpack.io' }
-		maven { url "https://maven.google.com" }
 	}
 	compile fileTree(dir: 'libs', include: ['*.jar'])
     compile project(':recentimages')
-    compile 'com.github.searchy2:CustomButton:1.4.1'
+    compile 'com.github.searchy2:CustomButton:1.4.2'
 
 	compile 'com.android.support:appcompat-v7:26.1.0'
 	compile 'com.android.support:recyclerview-v7:26.1.0'
