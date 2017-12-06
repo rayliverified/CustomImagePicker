@@ -1,15 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-	compileSdkVersion 26
-	buildToolsVersion "26.0.2"
+	compileSdkVersion 27
+	buildToolsVersion "27.0.1"
 
 	defaultConfig {
 		applicationId "stream.recentimagesapp"
 		minSdkVersion 15
 		versionCode 1
 		versionName "1.0.0"
-		targetSdkVersion 26
+		targetSdkVersion 27
 		vectorDrawables.useSupportLibrary = true
 	}
 	buildTypes {
@@ -26,8 +26,8 @@ dependencies {
 	}
 	compile fileTree(dir: 'libs', include: ['*.jar'])
     compile project(':recentimages')
-    compile 'com.github.searchy2:CustomButton:1.4.2'
+    compile 'com.github.searchy2:CustomButton:1.5'
 
-	compile 'com.android.support:appcompat-v7:26.1.0'
-	compile 'com.android.support:recyclerview-v7:26.1.0'
+	compile 'com.android.support:appcompat-v7:27.0.2'
+	compile 'com.android.support:recyclerview-v7:27.0.2'
 }
