@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
 	compileSdkVersion 27
-	buildToolsVersion "27.0.1"
+	buildToolsVersion "27.0.2"
 
 	defaultConfig {
 		applicationId "stream.recentimagesapp"
@@ -26,7 +26,7 @@ dependencies {
 	}
 	compile fileTree(dir: 'libs', include: ['*.jar'])
     compile project(':recentimages')
-    compile 'com.github.searchy2:CustomButton:1.5'
+    compile 'com.github.searchy2:CustomButton:1.5.1'
 
 	compile 'com.android.support:appcompat-v7:27.0.2'
 	compile 'com.android.support:recyclerview-v7:27.0.2'
