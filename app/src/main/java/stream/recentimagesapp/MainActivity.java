@@ -3,7 +3,6 @@ package stream.recentimagesapp;
 import android.Manifest;
 import android.app.Activity;
 import android.app.Dialog;
-import android.content.ContentResolver;
 import android.content.ContentUris;
 import android.content.Context;
 import android.content.Intent;
@@ -37,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
 
     private Uri imageUri;
     private ImageView mImage;
-    private ContentResolver cr;
     private Context mContext;
 
     @Override
@@ -52,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
             CheckPermissions();
         }
 
-        cr = this.getContentResolver();
         mImage = findViewById(R.id.imageView);
 
         //Initialize Recent Images Dialogue Popup.

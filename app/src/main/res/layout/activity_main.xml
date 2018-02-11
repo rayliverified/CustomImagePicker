@@ -1,4 +1,5 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
              android:id="@+id/intro_layout"
              android:layout_width="match_parent"
              android:layout_height="match_parent">
@@ -14,21 +15,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/bg_stars"/>
+        app:srcCompat="@drawable/bg_stars"/>
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="-40dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/bg_moon"/>
+        app:srcCompat="@drawable/bg_moon"/>
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="-40dp"
         android:scaleType="fitEnd"
-        android:src="@drawable/bg_mountains_geometric"/>
+        app:srcCompat="@drawable/bg_mountains_geometric"/>
 
     <LinearLayout
         android:layout_width="match_parent"
