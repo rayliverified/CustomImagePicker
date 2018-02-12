@@ -11,7 +11,7 @@ Custom Recent Images is a popup image picker for quick selection of recent image
 ### Double Row
 ![Screenshots](screenshots/Recent%20Images%202%20Rows.png)
 
-This library is part of the Custom UI collection of beautiful, minimalistic, and customizable Android UI components.
+This library is part of the [Custom UI](http://rayliverified.com/index.php/code/) collection of beautiful, minimalistic, and customizable Android UI components.
 
 # Gradle Dependency
 
@@ -141,6 +141,17 @@ Image selection code from https://github.com/amirarcane/recent-images
   <img alt="Ray Li GitHub"
        src="https://lh3.googleusercontent.com/L15QqmKK7Vl-Ag1ZxaBqNQlXVEw58JT2BDb-ef5t2eboDh0pPSLjDgi3-aQ3Opdhhyk=w96-rw" />
 </a>
+
+# Apps Using This Library
+
+Want to be here? You can include yourself by making a `pull request`. 
+
+<table>
+	<tr>
+		<td><img src="https://lh3.googleusercontent.com/R-vJInTblK1KBOqZaSDm_ac270QBHsiIcU9agHnN-rrp9K_lkN8rLzGIH8asCfkb420Q=w64-rw"/></td>
+		<td><a href="https://play.google.com/store/apps/details?id=io.ideastarter">Crowdfunding Community</a></td>
+	</tr>
+</table>
 
 #### Search Terms
 android, image, photo, picker, select, selector, chooser, gallery, viewer
