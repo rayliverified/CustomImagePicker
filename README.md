@@ -43,7 +43,7 @@ mBottomSheetDialog.getWindow().setGravity(Gravity.BOTTOM);
 Next, create the image gallery adapter and show it to the user. 
 
 ```java
-RecentImages ri = new RecentImages();
+CustomImagePicker ri = new CustomImagePicker();
 ri.setHeight(100);
 ri.setWidth(100);
 ImageAdapter adapter = ri.getAdapter(MainActivity.this);
