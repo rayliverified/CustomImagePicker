@@ -1,4 +1,4 @@
-package stream.recentimagesapp;
+package stream.customimagepickerapp;
 
 import android.Manifest;
 import android.app.Activity;
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
         mImage = findViewById(R.id.imageView);
 
-        //Initialize Recent Images Dialogue Popup.
+        //Initialize Image Picker Dialogue Popup.
         final View bottomSheet = getLayoutInflater().inflate(R.layout.bottom_sheet, null);
         final Dialog mBottomSheetDialog = new Dialog(this, R.style.MaterialDialogSheet);
         mBottomSheetDialog.setContentView(bottomSheet);
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         mBottomSheetDialog.getWindow().setLayout(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         mBottomSheetDialog.getWindow().setGravity(Gravity.BOTTOM);
 
-        //Initialize Recent Images Menu Actions.
+        //Initialize Image Picker Menu Actions.
         LinearLayout layoutCamera = bottomSheet.findViewById(R.id.btn_camera);
         LinearLayout layoutGallery = bottomSheet.findViewById(R.id.btn_gallery);
         layoutCamera.setOnClickListener(new View.OnClickListener() {
@@ -86,10 +86,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                CustomImagePicker ri = new CustomImagePicker();
-                ri.setHeight(100);
-                ri.setWidth(100);
-                ImageAdapter adapter = ri.getAdapter(MainActivity.this);
+                CustomImagePicker imagePicker = new CustomImagePicker();
+                imagePicker.setHeight(100);
+                imagePicker.setWidth(100);
+                ImageAdapter adapter = imagePicker.getAdapter(MainActivity.this);
 
                 TwoWayGridView gridview = bottomSheet.findViewById(R.id.gridview);
                 gridview.getLayoutParams().height = Units.dpToPx(mContext, 100);
@@ -112,10 +112,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                CustomImagePicker ri = new CustomImagePicker();
-                ri.setHeight(100);
-                ri.setWidth(100);
-                ImageAdapter adapter = ri.getAdapter(MainActivity.this);
+                CustomImagePicker imagePicker = new CustomImagePicker();
+                imagePicker.setHeight(100);
+                imagePicker.setWidth(100);
+                ImageAdapter adapter = imagePicker.getAdapter(MainActivity.this);
 
                 TwoWayGridView gridview = bottomSheet.findViewById(R.id.gridview);
                 gridview.getLayoutParams().height = Units.dpToPx(mContext, 200);

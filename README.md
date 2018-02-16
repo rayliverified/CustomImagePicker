@@ -43,10 +43,10 @@ mBottomSheetDialog.getWindow().setGravity(Gravity.BOTTOM);
 Next, create the image gallery adapter and show it to the user. 
 
 ```java
-CustomImagePicker ri = new CustomImagePicker();
-ri.setHeight(100);
-ri.setWidth(100);
-ImageAdapter adapter = ri.getAdapter(MainActivity.this);
+CustomImagePicker imagePicker = new CustomImagePicker();
+imagePicker.setHeight(100);
+imagePicker.setWidth(100);
+ImageAdapter adapter = imagePicker.getAdapter(MainActivity.this);
 
 TwoWayGridView gridview = bottomSheet.findViewById(R.id.gridview);
 gridview.getLayoutParams().height = Units.dpToPx(mContext, 200);
