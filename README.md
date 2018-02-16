@@ -1,9 +1,9 @@
-[![GitHub release](https://img.shields.io/github/release/searchy2/CustomRecentImages.svg?style=flat-square)](https://github.com/searchy2/CustomRecentImages/releases) [![GitHub Release Date](https://img.shields.io/github/release-date/searchy2/CustomRecentImages.svg?style=flat-square)](https://github.com/searchy2/CustomRecentImages) [![Libraries.io for GitHub](https://img.shields.io/librariesio/github/searchy2/CustomRecentImages.svg?style=flat-square)](https://github.com/searchy2/CustomRecentImages) [![GitHub issues](https://img.shields.io/github/issues/searchy2/CustomRecentImages.svg?style=flat-square)](https://github.com/searchy2/CustomRecentImages) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/searchy2/CustomRecentImages.svg?style=flat-square)](https://github.com/searchy2/CustomRecentImages) [![API](https://img.shields.io/badge/API-15%2B-blue.svg?style=flat-square)](https://github.com/searchy2/CustomRecentImages) [![GitHub top language](https://img.shields.io/github/languages/top/searchy2/CustomRecentImages.svg?style=flat-square)](https://github.com/searchy2/CustomRecentImages)
-# Custom Recent Images
+[![GitHub release](https://img.shields.io/github/release/searchy2/CustomImagePicker.svg?style=flat-square)](https://github.com/searchy2/CustomImagePicker/releases) [![GitHub Release Date](https://img.shields.io/github/release-date/searchy2/CustomImagePicker.svg?style=flat-square)](https://github.com/searchy2/CustomImagePicker) [![Libraries.io for GitHub](https://img.shields.io/librariesio/github/searchy2/CustomImagePicker.svg?style=flat-square)](https://github.com/searchy2/CustomImagePicker) [![GitHub issues](https://img.shields.io/github/issues/searchy2/CustomImagePicker.svg?style=flat-square)](https://github.com/searchy2/CustomImagePicker) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/searchy2/CustomImagePicker.svg?style=flat-square)](https://github.com/searchy2/CustomImagePicker) [![API](https://img.shields.io/badge/API-15%2B-blue.svg?style=flat-square)](https://github.com/searchy2/CustomImagePicker) [![GitHub top language](https://img.shields.io/github/languages/top/searchy2/CustomImagePicker.svg?style=flat-square)](https://github.com/searchy2/CustomImagePicker)
+# Custom Image Picker
 
 ![Screenshots](screenshots/Custom-Recent-Images-Cover.gif)
 
-Custom Recent Images is a popup image picker for quick selection of recent images. This photo chooser does not require a custom image provider. Custom Recent Images works great for choosing images in a chat app, selecting a profile image, or any quick image selection needs.
+Custom Image Picker is a popup image picker for quick selection of recent images. This photo chooser does not require a custom image provider. Custom Image Picker works great for choosing images in a chat app, selecting a profile image, or any quick image selection needs.
 
 ### Single Row 
 ![Screenshots](screenshots/Recent%20Images%201%20Row.png)
@@ -21,13 +21,13 @@ Add this line to your `build.gradle` project. Use the latest release version for
 repositories {
     maven { url 'https://jitpack.io' }
 }
-compile 'com.github.searchy2:CustomRecentImages:latest-version'
+compile 'com.github.searchy2:CustomImagePicker:latest-version'
 ```
 # Usage
 
 ### Code
 
-Custom Recent Images uses a Dialog popup to display the image gallery. Copy the following code into your project and you will have a working image picker. It's that simple!
+Custom Image Picker uses a Dialog popup to display the image gallery. Copy the following code into your project and you will have a working image picker. It's that simple!
 
 First, initialize the bottom sheet layout of our image picker gallery and create the popup dialogue. 
 
@@ -69,7 +69,7 @@ That's it! Now you have a fancy new image picker!
 
 ### Layouts
 
-Custom Recent Images is highly customizable. The default `bottom_sheet_default.xml` layout contains only an image gallery but you can design your own image picker layout or use an existing layout. Please view the sample app for an example image layout with action sheet buttons that capture a photo and open the device image gallery. 
+Custom Image Picker is highly customizable. The default `bottom_sheet_default.xml` layout contains only an image gallery but you can design your own image picker layout or use an existing layout. Please view the sample app for an example image layout with action sheet buttons that capture a photo and open the device image gallery. 
 
 ### Builder Attributes
 
