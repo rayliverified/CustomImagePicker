@@ -22,8 +22,8 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import stream.custombutton.CustomButton;
-import stream.recentimages.ImageAdapter;
-import stream.recentimages.RecentImages;
+import stream.customimagepicker.ImageAdapter;
+import stream.customimagepicker.CustomImagePicker;
 import com.bumptech.glide.Glide;
 import stream.jess.ui.TwoWayAdapterView;
 import stream.jess.ui.TwoWayGridView;
@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                RecentImages ri = new RecentImages();
+                CustomImagePicker ri = new CustomImagePicker();
                 ri.setHeight(100);
                 ri.setWidth(100);
                 ImageAdapter adapter = ri.getAdapter(MainActivity.this);
@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                RecentImages ri = new RecentImages();
+                CustomImagePicker ri = new CustomImagePicker();
                 ri.setHeight(100);
                 ri.setWidth(100);
                 ImageAdapter adapter = ri.getAdapter(MainActivity.this);

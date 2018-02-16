@@ -66,7 +66,7 @@ import android.widget.EditText;
 import android.widget.ListAdapter;
 import android.widget.Scroller;
 
-import stream.recentimages.R;
+import stream.customimagepicker.R;
 
 /**
  * Base class that can be used to implement virtualized lists of items. A list does

@@ -1,10 +1,10 @@
-package stream.recentimages;
+package stream.customimagepicker;
 
 import android.content.Context;
 import android.database.Cursor;
 import android.provider.MediaStore;
 
-public class RecentImages {
+public class CustomImagePicker {
 
 	public static final String ASCENDING = " ASC";
 	public static final String DESCENDING = " DESC";
