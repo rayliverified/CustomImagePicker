@@ -5,12 +5,12 @@ group='com.github.searchy2'
 version = '2.1'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
     buildToolsVersion "27.0.3"
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 27
+        targetSdkVersion 28
         vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
@@ -23,6 +23,6 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:27.1.0'
-    compile 'com.github.bumptech.glide:glide:4.6.1'
+    compile 'androidx.appcompat:appcompat:1.0.0-alpha3'
+    compile 'com.github.bumptech.glide:glide:4.7.1'
 }
