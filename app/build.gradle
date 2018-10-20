@@ -2,7 +2,6 @@ apply plugin: 'com.android.application'
 
 android {
 	compileSdkVersion 28
-	buildToolsVersion "27.0.3"
 
 	defaultConfig {
 		applicationId "stream.recentimagesapp"
@@ -24,10 +23,11 @@ dependencies {
     repositories {
         maven { url 'https://jitpack.io' }
 	}
-	compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project(':customimagepicker')
-    compile 'com.github.searchy2:CustomButton:1.8.0'
+	implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':customimagepicker')
+    implementation 'com.github.searchy2:CustomButton:1.8.2'
 
-	compile 'androidx.appcompat:appcompat:1.0.0-alpha3'
-	compile 'androidx.recyclerview:recyclerview:1.0.0-alpha3'
+	implementation 'androidx.appcompat:appcompat:1.0.0'
+	implementation 'androidx.recyclerview:recyclerview:1.0.0'
+	implementation 'com.github.bumptech.glide:glide:4.8.0'
 }
