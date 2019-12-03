@@ -1,6 +1,7 @@
 package stream.customimagepickerapp;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.ContentUris;
@@ -11,9 +12,6 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import androidx.annotation.NonNull;
-import androidx.core.app.ActivityCompat;
-import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
@@ -21,15 +19,21 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import stream.custombutton.CustomButton;
-import stream.customimagepicker.ImageAdapter;
-import stream.customimagepicker.CustomImagePicker;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+
 import com.bumptech.glide.Glide;
+
+import stream.custombutton.CustomButton;
+import stream.customimagepicker.CustomImagePicker;
+import stream.customimagepicker.ImageAdapter;
 import stream.jess.ui.TwoWayAdapterView;
 import stream.jess.ui.TwoWayGridView;
 
 public class MainActivity extends AppCompatActivity {
 
+    @SuppressLint("InlinedApi")
     private static String[] permissionList = {Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.CAMERA};
     private static final int CAPTURE_IMAGE = 0;
     private static final int SELECT_PHOTO = 1;
@@ -46,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         mContext = getApplicationContext();
 
         //Permissions need to be granted at runtime on Marshmallow
-        if (Build.VERSION.SDK_INT >= 21) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             CheckPermissions();
         }
 
@@ -139,10 +143,6 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         switch (requestCode) {
             case CAPTURE_IMAGE:
-                if (resultCode == Activity.RESULT_OK) {
-                    imageUri = data.getData();
-                }
-                break;
             case SELECT_PHOTO:
                 if (resultCode == Activity.RESULT_OK) {
                     imageUri = data.getData();
@@ -157,6 +157,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        //noinspection SwitchStatementWithTooFewBranches
         switch (requestCode) {
             case 1:
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
